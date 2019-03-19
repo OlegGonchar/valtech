@@ -320,7 +320,7 @@ footer .footer-link {
     font-weight: bold;
   }
   #nav .menu-item:hover {
-    background-color: inherit;
+    background-color: transparent;
     border-radius: 0;
     color: inherit;
   }
