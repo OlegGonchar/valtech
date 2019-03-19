@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css?family=Abel|Antic");
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  color: #000;
+}
+
+.active {
+  display: block !important;
+}
+
+.container {
+  margin: 5vh 15vw;
+}
+
+svg:hover {
+  fill: black;
+}
+
+svg:hover path {
+  fill: inherit;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: right;
+  padding: 5vh 15vw;
+}
+
+#nav .nav-logo {
+  float: left;
+}
+
+#nav .nav-logo img {
+  height: 2em;
+}
+
+#nav .menu-item {
+  display: inline-block;
+  color: #202020;
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+#nav .menu-item:hover {
+  background-color: #00C8FF;
+  border-radius: 5px;
+  color: #fff;
+}
+
+#nav .icon {
+  display: none;
+  width: 45px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+#nav .icon span {
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background-color: #333333;
+  border-radius: 6px;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav .icon span:nth-child(1) {
+  top: 0;
+}
+
+#nav .icon span:nth-child(2), #nav .icon span:nth-child(3) {
+  top: 10px;
+}
+
+#nav .icon span:nth-child(4) {
+  top: 20px;
+}
+
+#nav.menu-open .links {
+  opacity: 1;
+  margin-top: 65px;
+}
+
+#nav.menu-open .icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav.menu-open .icon span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#nav.menu-open .icon span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+#nav.menu-open .icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#start {
+  padding: 8em 0 4em 0;
+  font-family: 'Abel',sans-serif;
+  text-align: center;
+}
+
+#start .nav-logo {
+  display: none;
+}
+
+#start h1 {
+  font-weight: normal;
+  font-size: 3em;
+  color: #202020;
+}
+
+#start p {
+  text-align: left;
+  font-size: 1.6em;
+  color: #4F4F4F;
+}
+
+#start .btn {
+  display: block;
+  width: 16vw;
+  padding: 0.3em;
+  margin-top: 4em;
+  border-radius: 10px;
+  background: #00C8FF;
+  font-family: 'Abel','sans-serif';
+  font-size: 28px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  border: 1px transparent solid;
+  -webkit-box-shadow: 1px 3px 5px grey;
+          box-shadow: 1px 3px 5px grey;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#start .btn:hover {
+  border: 1px #202020 solid;
+  color: grey;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.title {
+  position: relative;
+  padding-top: 2em;
+}
+
+.title-text {
+  position: absolute;
+  left: 14vw;
+  top: 2em;
+  font-family: 'Antic', sans-serif;
+  text-transform: uppercase;
+  background: #fff;
+  padding: 0 1em;
+}
+
+#services {
+  font-family: 'Abel', sans-serif;
+}
+
+#services .services-text {
+  color: black;
+}
+
+#services .services-text h3 {
+  font-weight: normal;
+}
+
+#services .services-text p {
+  color: #B2B2B2;
+  font-size: 1em;
+}
+
+#services .services-item a {
+  text-decoration: none;
+}
+
+#services .services-item a:hover {
+  font-weight: 600;
+}
+
+#services .services-item .picture {
+  text-align: center;
+  margin: auto auto;
+}
+
+#services .services-item .picture img {
+  margin: auto;
+}
+
+#clients .clients-item {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 2em;
+  margin: auto auto;
+}
+
+#team {
+  font-family: 'Abel', sans-serif;
+  padding: 2em 0;
+}
+
+#team .team-item {
+  margin: auto auto;
+  text-align: center;
+}
+
+#team .team-item .row {
+  padding: 1em 0.5em;
+}
+
+#team .team-item .team-text {
+  color: #202020;
+  text-align: left;
+}
+
+#team .team-item .team-text h3 {
+  font-weight: normal;
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+#team .team-item .team-text p {
+  color: #B2B2B2;
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+footer {
+  width: 100%;
+  background-color: #F7F7F7;
+  text-align: right;
+  padding: 4vh 14vw;
+}
+
+footer .footer-logo {
+  float: left;
+  padding: 0.5em 1.5em;
+}
+
+footer .footer-logo img {
+  height: 2em;
+}
+
+footer .footer-link {
+  display: inline-block;
+  color: #B2B2B2;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    cursor: default !important;
+  }
+  svg:hover {
+    fill: #B2B2B2;
+  }
+  #nav {
+    padding: 3vh 10vw;
+  }
+  #nav .icon {
+    display: inline-block;
+  }
+  #nav .links {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(236, 236, 236, 0.8);
+    margin-top: 52px;
+    z-index: 1000;
+    overflow: auto;
+    opacity: 0;
+  }
+  #nav #logo-mobile {
+    position: fixed;
+    display: inline-block;
+    top: 3vh;
+    left: 0.7em;
+    width: 20vw;
+  }
+  #nav .menu-item {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+  }
+  #nav .menu-item:hover {
+    background-color: inherit;
+    border-radius: 0;
+    color: inherit;
+  }
+  #start {
+    padding: 4em 0 4em 0;
+  }
+  #start .nav-logo {
+    display: block;
+  }
+  #start .btn {
+    width: 40vw;
+    font-size: 5vw;
+  }
+  #start .btn:hover {
+    color: #fff;
+    background: #00C8FF;
+    border: 1px transparent solid;
+    -webkit-box-shadow: 1px 3px 5px grey;
+            box-shadow: 1px 3px 5px grey;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  #services .services-item a:hover {
+    background-color: inherit;
+  }
+  footer {
+    padding: 1em 1.5em;
+  }
+  footer .footer-logo {
+    padding: 0.5em 0.5em;
+  }
+  footer .footer-logo img {
+    height: 1em;
+  }
+  footer .footer-link {
+    padding: 0 0.5em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
